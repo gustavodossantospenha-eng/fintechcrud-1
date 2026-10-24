@@ -44,7 +44,7 @@
       id="dataNascimento"
       name="dataNascimento"
       type="date"
-      [(ngModel)]="cliente.dataNascimento"
+      [(ngModel)]="cliente.dtNascimento"
     />
 
     <label for="email">Email</label>
@@ -74,14 +74,14 @@
       name="confirmarSenha"
       type="password"
       placeholder="Confirme sua senha"
-      [(ngModel)]="cliente.confirmarSenha"
+      [(ngModel)]="confimarSenha"
     />
 
     <button
       type="button"
       class="input-submeter"
-      (click)="cadastrar()">
-      Cadastrar
+      (click)="salvar()">
+      Confirmar
     </button>
 
   </form>

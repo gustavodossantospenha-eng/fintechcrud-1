@@ -44,7 +44,7 @@
               <button
                 class="botao-editar"
                 type="button"
-                (click)="editar(cliente.id)">
+               [routerLink]="['/admin-clientes-editar', cliente.id]">
                 Editar
               </button>
 

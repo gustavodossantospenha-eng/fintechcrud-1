@@ -26,4 +26,10 @@ export class ClienteService {
     return this.clienteHTTP.delete<void>(`${this.API}/${id}`);
   }
 
+  buscarPorId(id:string):Observable<Cliente>{
+    return this.clienteHTTP.get<Cliente>(`${this.API}/${id}`)
+  }
+editar(cliente:Cliente):Observable<Cliente>{
+return this.clienteHTTP.put<Cliente>(`${this.API}/${cliente.id}`, cliente);
+}
 }
